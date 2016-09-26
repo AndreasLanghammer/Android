@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.andreas.p1finance.MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Please chose income, expenses or statment below."
+        android:id="@+id/tv_start_page"
+        android:layout_gravity="center_vertical" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Income"
+        android:id="@+id/btn_income"
+        android:layout_centerVertical="true"
+        android:layout_alignRight="@+id/btn_expenses"
+        android:layout_alignEnd="@+id/btn_expenses"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Expence"
+        android:id="@+id/btn_expenses"
+        android:layout_marginBottom="40dp"
+        android:layout_above="@+id/btn_income"
+        android:layout_alignRight="@+id/tv_start_page"
+        android:layout_alignEnd="@+id/tv_start_page"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Statement"
+        android:id="@+id/btn_statment"
+        android:layout_below="@+id/btn_income"
+        android:layout_marginTop="40dp"
+        android:layout_alignRight="@+id/btn_income"
+        android:layout_alignEnd="@+id/btn_income"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_enter_name"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/tv_expenses_tot"
+        android:layout_below="@+id/btn_statment"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/tv_income_tot"
+        android:layout_below="@+id/tv_expenses_tot"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_balance"
+        android:layout_below="@+id/tv_income_tot"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>
